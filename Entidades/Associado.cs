@@ -1,0 +1,30 @@
+﻿using gisa_dominio.Enum;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace gisa_dominio.Entidades
+{
+    public class Associado : EntidadeBase
+    {
+        public string Nome { get; set; }
+        public string Sobrenome { get; set; }
+        public DateOnly DataNascimento { get; set; }
+        public EstadoCivilEnum EstadoCivil { get; set; }
+        public SexoEnum Sexo { get; set; }
+        public UfEnum Naturalidade { get; set; }
+        public string NaturalidadeCidade { get; set; }
+        public string NumeroDocumento { get; set; }
+        public UfEnum UfDocumento { get; set; }
+        public string OrgaoDocumento { get; set; }
+        public DateOnly DataEmissaoDocumento { get; set; }
+        public string NomeMae { get; set; }
+        public string NomePai { get; set; }
+        public Endereco Endereco { get; set; }
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+        public SituacaoAssociadoEnum Situacao { get; set; }
+    }
+}
