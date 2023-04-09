@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gisa_dominio.Enum
+namespace GisaDominio.Enum
 {
     public enum EstadoCivilEnum
     {

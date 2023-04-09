@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gisa_dominio.Entidades
+namespace GisaDominio.Entidades
 {
     public class Conveniado : EntidadeBase
     {

@@ -1,11 +1,11 @@
-﻿using gisa_dominio.Enum;
+﻿using GisaDominio.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gisa_dominio.Entidades
+namespace GisaDominio.Entidades
 {
     public class Plano : EntidadeBase
     {

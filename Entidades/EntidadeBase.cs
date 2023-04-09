@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gisa_dominio.Entidades
+namespace GisaDominio.Entidades
 {
     public abstract class EntidadeBase
     {
-        public Int64 Id { get; set; }
+        public long Id { get; set; }
     }
 }

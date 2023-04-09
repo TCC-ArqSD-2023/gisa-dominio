@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GisaDominio.Entidades
+namespace GisaDominio.Enum
 {
-    public class Endereco : EntidadeBase
+    public class SituacaoAtendimentoEnum
     {
     }
 }
