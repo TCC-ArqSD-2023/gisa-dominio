@@ -27,5 +27,6 @@ namespace GisaDominio.Entidades
         public string Email { get; set; }
         public string Telefone { get; set; }
         public SituacaoAssociadoEnum Situacao { get; set; }
+        public Plano Plano { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace GisaDominio.Entidades
         public DateOnly DataNascimento { get; set; }
         public SexoEnum Sexo { get; set; }
         public string NumeroDocumentoProfissional { get; set; }
-        public List<Especialidade> Especialidade { get; set; }
+        public ICollection<Especialidade> Especialidades { get; set; }
         public Endereco EnderecoAtendimento { get; set; }
         public string Telefone { get; set; }
 
