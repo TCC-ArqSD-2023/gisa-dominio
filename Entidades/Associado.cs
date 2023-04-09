@@ -1,4 +1,5 @@
-﻿using GisaDominio.Enum;
+﻿using GisaApiArq.Dominio;
+using GisaDominio.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
