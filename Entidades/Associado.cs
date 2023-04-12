@@ -12,7 +12,7 @@ namespace GisaDominio.Entidades
     {
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
-        public DateOnly DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
         public EstadoCivilEnum EstadoCivil { get; set; }
         public SexoEnum Sexo { get; set; }
         public UfEnum Naturalidade { get; set; }
@@ -20,13 +20,16 @@ namespace GisaDominio.Entidades
         public string NumeroDocumento { get; set; }
         public UfEnum UfDocumento { get; set; }
         public string OrgaoDocumento { get; set; }
-        public DateOnly DataEmissaoDocumento { get; set; }
+        public DateTime DataEmissaoDocumento { get; set; }
         public string NomeMae { get; set; }
-        public string NomePai { get; set; }
-        public Endereco Endereco { get; set; }
+        public string? NomePai { get; set; }
+        public virtual Endereco Endereco { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
         public SituacaoAssociadoEnum Situacao { get; set; }
-        public Plano Plano { get; set; }
+        public virtual Plano Plano { get; set; }
+
+        public long EnderecoId { get; set; }
+        public long PlanoId { get; set; }
     }
 }

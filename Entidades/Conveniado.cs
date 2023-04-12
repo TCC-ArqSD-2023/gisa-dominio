@@ -10,7 +10,9 @@ namespace GisaDominio.Entidades
     public class Conveniado : EntidadeBase
     {
         public string Nome { get; set; }
-        public Endereco Endereco { get; set; }
+        public virtual Endereco Endereco { get; set; }
         public string Telefone { get; set; }
+
+        public long EnderecoId { get; set; }
     }
 }
