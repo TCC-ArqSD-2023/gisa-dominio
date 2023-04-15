@@ -15,6 +15,10 @@ jobs:
         git branch --remote --contains | grep origin/main
     - name: Define variável VERSAO a partir da tag
       run: echo "VERSAO=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
+    - name: Configurar nuget
+      run: dotnet nuget add source https://nuget.pkg.github.com/TCC-ArqSD-2023/index.json -n github -u dinobri -p ${DINOBRIPAT_NUGET} --store-password-in-clear-text
+      env:
+        DINOBRIPAT_NUGET: ${{ secrets.DINOBRIPAT_NUGET }}
     - name: Build
       run: dotnet build --configuration Release /p:Version=${VERSAO}
     - name: Pack
