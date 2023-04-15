@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<PackageId>Gisa.GisaDominio</PackageId>
 		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/TCC-ArqSD-2023/gisa-api-arq</RepositoryUrl>
+		<RepositoryUrl>https://github.com/TCC-ArqSD-2023/gisa-dominio</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
