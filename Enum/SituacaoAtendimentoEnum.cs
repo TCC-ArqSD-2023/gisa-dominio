@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace GisaDominio.Enum
 {
-    public class SituacaoAtendimentoEnum
+    public enum SituacaoAtendimentoEnum
     {
+        Aberto,
+        Agendado,
+        Cancelado,
+        EmAndamento,
+        Finalizado
     }
 }
