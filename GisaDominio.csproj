@@ -1,22 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>GisaDominio</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>GisaDominio</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FluentResults" Version="3.15.2" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PackageId>Gisa.GisaDominio</PackageId>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/TCC-ArqSD-2023/gisa-api-arq</RepositoryUrl>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GisaApiArq\GisaApiArq.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="FluentResults" Version="3.15.2" />
+		<PackageReference Include="Gisa.GisaApiArq" Version="1.0.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\Repositorios\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Interfaces\Repositorios\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include=".github\workflows\release.yaml" />
+	</ItemGroup>
 
 </Project>
