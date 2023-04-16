@@ -12,11 +12,11 @@ namespace GisaDominio.Entidades
     {
         public DateTime Inicio { get; set; }
         public DateTime Fim { get; set; }
-        public int PrestadorId { get; set; }
-        public int? PacienteId { get; set; }
-        public SituacaoAssociadoEnum Situacao { get; set; }
+        public long PrestadorId { get; set; }
+        public long? PacienteId { get; set; }
+        public SituacaoAtendimentoEnum Situacao { get; set; }
 
-        public Prestador Prestador { get; set; }
-        public Associado? Paciente { get; set; }
+        public virtual Prestador Prestador { get; set; }
+        public virtual Associado? Paciente { get; set; }
     }
 }
