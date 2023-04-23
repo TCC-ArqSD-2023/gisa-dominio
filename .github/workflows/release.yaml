@@ -33,3 +33,7 @@ jobs:
       run: dotnet nuget push Gisa.GisaDominio.${VERSAO}.nupkg --source https://nuget.pkg.github.com/TCC-ArqSD-2023/index.json --api-key ${DINOBRIPAT_NUGET}
       env:
         DINOBRIPAT_NUGET: ${{ secrets.DINOBRIPAT_NUGET }}
+    - uses: actions-ecosystem/action-push-tag@v1
+      with:
+        tag: v${{ steps.get-version.outputs.version }}
+        message: 'v${{ steps.bump-semver.outputs.new_version }}'
