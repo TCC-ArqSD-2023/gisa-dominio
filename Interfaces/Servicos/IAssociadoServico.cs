@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GisaDominio.Interfaces.Servicos
 {
-    public interface IServicoAssociado : IServicoCrudBase<Associado>
+    public interface IAssociadoServico : IServicoCrudBase<Associado>
     {
         Result AderirPlano(long associadoId, long planoId);
     }
