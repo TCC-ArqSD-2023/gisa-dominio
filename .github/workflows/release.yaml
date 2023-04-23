@@ -19,7 +19,7 @@ jobs:
       uses: kzrnm/get-net-sdk-project-versions-action@v1
       id: get-version
       with:
-        proj-path: GisaApiArq.csproj
+        proj-path: GisaDominio.csproj
     - run: echo "VERSAO=${{steps.get-version.outputs.version}}" >> $GITHUB_ENV 
     - name: Configurar nuget
       run: dotnet nuget add source https://nuget.pkg.github.com/TCC-ArqSD-2023/index.json -n github -u dinobri -p ${DINOBRIPAT_NUGET} --store-password-in-clear-text
