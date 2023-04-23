@@ -5,6 +5,7 @@
 		<RootNamespace>GisaDominio</RootNamespace>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<Version>1.0.2</Version>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -15,10 +16,11 @@
 
 	<ItemGroup>
 		<PackageReference Include="FluentResults" Version="3.15.2" />
-		<PackageReference Include="Gisa.GisaApiArq" Version="1.0.1" />
+		<PackageReference Include="Gisa.GisaApiArq" Version="1.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<Folder Include="Interfaces\Servicos\" />
 		<Folder Include="Interfaces\Repositorios\" />
 	</ItemGroup>
 
