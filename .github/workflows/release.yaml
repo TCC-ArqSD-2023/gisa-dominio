@@ -32,10 +32,10 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSAO} --no-build --output .
     - name: Tag
-      uses: thejeff77/action-push-tag@v1.0.0
-      with:
-        tag: v${{ steps.get-version.outputs.version }}
-        message: 'v${{ steps.get-version.outputs.version }}'
+      uses: anothrNick/github-tag-action@1.62.0
+      env: 
+        GITHUB_TOKEN: ${{ secrets.DINOBRIPAT_NUGET }}
+        CUSTOM_TAG: 'v${{ steps.get-version.outputs.version }}'
     - name: Push
       run: dotnet nuget push Gisa.GisaDominio.${VERSAO}.nupkg --source https://nuget.pkg.github.com/TCC-ArqSD-2023/index.json --api-key ${DINOBRIPAT_NUGET}
       env:
