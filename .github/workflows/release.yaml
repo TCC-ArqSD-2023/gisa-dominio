@@ -32,7 +32,7 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSAO} --no-build --output .
     - name: Tag
-      uses: actions-ecosystem/action-push-tag@v1
+      uses: thejeff77/action-push-tag@v1.0.0
       with:
         tag: v${{ steps.get-version.outputs.version }}
         message: 'v${{ steps.get-version.outputs.version }}'
