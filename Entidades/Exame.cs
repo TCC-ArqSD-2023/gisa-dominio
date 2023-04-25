@@ -17,8 +17,8 @@ namespace GisaDominio.Entidades
         public long? PacienteId { get; set; }
         public SituacaoAtendimentoEnum Situacao { get; set; }
 
-        public virtual TipoExame TipoExame { get; set; }
-        public virtual Conveniado Conveniado { get; set; }
+        public virtual TipoExame? TipoExame { get; set; }
+        public virtual Conveniado? Conveniado { get; set; }
         public virtual Associado? Paciente { get; set; }
     }
 }

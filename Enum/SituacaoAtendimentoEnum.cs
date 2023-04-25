@@ -10,8 +10,8 @@ namespace GisaDominio.Enum
     {
         Aberto,
         Agendado,
+        AguardandoAutorizacao,
         Cancelado,
-        EmAndamento,
         Finalizado
     }
 }
