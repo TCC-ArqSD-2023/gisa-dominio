@@ -16,7 +16,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="FluentResults" Version="3.15.2" />
-		<PackageReference Include="Gisa.GisaApiArq" Version="1.1.0" />
+		<PackageReference Include="Gisa.GisaApiArq" Version="1.1.1" />
 	</ItemGroup>
 
 	<ItemGroup>
